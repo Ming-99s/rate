@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+#container{
+    height: 450px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50px;
+    padding: 2.5rem;
+}
+.lable{
+    display:none ;
+}
+#ratebox {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+}
+#ratebox img{
+    height: 3rem;
+    border-radius: 50%;
+    padding: 2%;
+    background-color: hsl(213, 7%, 26%);
+    margin-bottom: 1rem;
+    
+}
+#ratebox h1{
+    margin-bottom: 1.5rem;
+}
+#ratebox p{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: hsl(217, 12%, 63%);
+}
+
+.ratebtn{
+    height: 4rem;
+    width: 4rem;
+    background-color:hsl(213, 7%, 26%) ;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    transition: 0.3s;
+    
+
+}
+#submitbtn{
+    width: 100%;
+    height: 3rem;
+    background-color:hsl(25, 97%, 53%) ;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+}
+.boxrate{
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.ratebtn:hover{
+    background-color: hsl(217, 12%, 63%);
+}
+#num1:checked ~ .lable1,
+#num2:checked ~ .lable2,
+#num3:checked ~ .lable3,
+#num4:checked ~ .lable4,
+#num5:checked ~ .lable5
+{
+    background-color:hsl(25, 97%, 53%) ;
+}
+#submitbtn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+#afterbtn{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#afterbtn #p1{
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(216, 5%, 40%);
+    width: 13rem;
+    height: 3rem;
+    align-content: center;
+    font-weight: 500;
+    border-radius: 40px;
+}
+#afterbtn #p2{
+    color:hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+#afterbtn  h1{
+    margin: 1rem;
+    font-size: 3rem;
+}
+#afterbtn img{
+    margin: 2rem;
+}
+#ratebox{
+    display: block;
+}
